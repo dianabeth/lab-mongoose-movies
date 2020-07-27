@@ -1,6 +1,6 @@
 <h2> Show </h2>
-  {{#each}}
- <p><a href="/celebrities/{{ id }}"> {{ name }}</a> </p> 
-   <p> {{ occupation }} </p>
-  <p> {{  catchphrase }} </p>
-  {{/each}}
+<p> {{ celebrities.name}}</p>
+   <p> {{ celebrities.occupation }} </p>
+  <p> {{  celebrities.catchphrase }} </p>
+
+<a href="/celebrities/{{ celebrities.id }}">Edit celebrity details</a>

@@ -1,7 +1,13 @@
 <h2>Celebrities</h2>
 
-{{#each celebrities}}
-<h3>{{ celebrity.name }} </h3>  
-{{/each}}
-
-<a href="/celebrities/create">Create a new celebrity</a>
+<div>
+  {{#each celebrities}}
+  <a href="/celebrities/{{ id }}">
+     <p>{{ name }}</p>
+   </a>
+   <form action="/celebrities/{{id}}/delete" method="POST">
+  <button>Delete celeb</button>
+  </form>
+  {{/each}}
+  </div>
+<a href="/celebrities/create">Create celeb page</a>
